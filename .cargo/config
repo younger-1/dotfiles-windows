@@ -1,0 +1,16 @@
+[source.crates-io]
+registry = "https://github.com/rust-lang/crates.io-index"
+
+replace-with = 'ustc'
+#replace-with = 'rustcc'
+
+[source.ustc]
+registry = "https://mirrors.ustc.edu.cn/crates.io-index"
+[source.tuna]
+registry = "https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git"
+[source.rustcc]
+registry="git://crates.rustcc.com/crates.io-index"
+
+[http]
+#check-config = false
+check-revoke = false
