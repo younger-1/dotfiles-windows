@@ -1,0 +1,154 @@
+{
+    "plugins": [
+        "git",
+        "ssh",
+        "dircolors"
+    ],
+    "prompt": [
+        [
+            "cyan",
+            "",
+            "$path"
+        ],
+        [
+            "yellow",
+            "black",
+            " $([text.encoding]::utf8.getstring((226,157,175)))$([text.encoding]::utf8.getstring((226,157,175)))"
+        ],
+        [
+            "green",
+            "",
+            "$(&{If($is_git ) {\" $([text.encoding]::utf8.getstring((238,130,160))) $git_branch\"} Else {''}})"
+        ],
+        [
+            "darkcyan",
+            "",
+            " $git_local_state"
+        ],
+        [
+            "magenta",
+            "",
+            " $git_remote_state"
+        ],
+        [
+            "darkgreen",
+            "",
+            "`n$([char]0x3BB)$([char]0x0BB)"
+        ]
+    ],
+    "git": {
+        "prompt_unstaged": "*",
+        "prompt_staged": "+",
+        "prompt_stash": "$",
+        "prompt_untracked": "%",
+        "prompt_remote_push": ">",
+        "prompt_remote_pull": "<",
+        "prompt_remote_same": "="
+    },
+    "dircolors": {
+        "dirs": [
+            [
+                ".*",
+                "cyan",
+                ""
+            ]
+        ],
+        "files": [
+            [
+                "[.](7z|zip|tar|gz|rar)$",
+                "darkcyan",
+                ""
+            ],
+            [
+                "[.](exe|bat|cmd|ps1|psm1|vbs|reg)$",
+                "darkgreen",
+                ""
+            ],
+            [
+                "[.](rs|rslib|go|hs|lhs|scm|ss|clj|cljs|scala|sc)$",
+                "white",
+                "cyan"
+            ],
+            [
+                "[.](cpp|c|cc|cxx|h|hh|hpp|hxx|f|for)$",
+                "yellow",
+                "darkgray"
+            ],
+            [
+                "[.](class|java|kt|cs|fsx|fsi|ml|mli|dart)$",
+                "darkgray",
+                "blue"
+            ],
+            [
+                "[.](py|pyc|ipynb|jl|pl|pm|t|pod|rb|rbw|erb|reek|php)$",
+                "black",
+                "gray"
+            ],
+            [
+                "[.](js|jsx|ts|tsx|es6)$",
+                "white",
+                "red"
+            ],
+            [
+                "[.](css/scss)$",
+                "black",
+                "red"
+            ],
+            [
+                "[.](doc|docx|dot|dotx|docm|dotm|wps|wpt|rtf)$",
+                "white",
+                "magenta"
+            ],
+            [
+                "[.](ppt|pptx|dps|dpt|pot|pps|pptm|potx|potm|ppsx|ppsm)$",
+                "darkgray",
+                "magenta"
+            ],
+            [
+                "[.](xls|xlt|xlsm|xlsx|et|ett|xltx|xltm|prn|dif)$",
+                "darkgreen",
+                "magenta"
+            ],
+            [
+                "[.](pdf)",
+                "yellow",
+                "magenta"
+            ],
+            [
+                "[.](cfg|conf|config|yml|ini|toml|json)$",
+                "gray",
+                ""
+            ],
+            [
+                "[.](sln|csproj|sqlproj|proj|targets|rc)$",
+                "red",
+                ""
+            ],
+            [
+                "[.](html|htm|xml|mhtml|mht)$",
+                "darkyellow",
+                ""
+            ],
+            [
+                "[.](git|gitignore|gitattributes|epub|jpg|png|tif|bmp)$",
+                "magenta",
+                ""
+            ],
+            [
+                "[.](md|tex|sql|db|mdb)$",
+                "darkmagenta",
+                ""
+            ],
+            [
+                "^[.].+$",
+                "darkgray",
+                ""
+            ],
+            [
+                ".+",
+                "white",
+                ""
+            ]
+        ]
+    }
+}

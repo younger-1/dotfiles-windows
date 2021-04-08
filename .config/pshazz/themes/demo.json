@@ -1,0 +1,48 @@
+{
+    "plugins": [
+        "git",
+        "hg",
+        "ssh",
+        "z",
+        "aliases"
+    ],
+    "prompt": [
+        [
+            "",
+            "DarkGray",
+            " $time "
+        ],
+        [
+            "DarkGray",
+            "Blue",
+            "$rightarrow"
+        ],
+        [
+            "Black",
+            "Blue",
+            " $path "
+        ],
+        [
+            "Blue",
+            "Green",
+            "$git_dirty$git_branch"
+        ],
+        [
+            "green",
+            "",
+            " `$"
+        ]
+    ],
+    "git": {
+        "prompt_unstaged": "*",
+        "prompt_staged": "+",
+        "prompt_stash": "$",
+        "prompt_untracked": "%",
+        "prompt_remote_push": ">",
+        "prompt_remote_pull": "<",
+        "prompt_remote_same": "="
+    },
+    "hg": {
+        "prompt_dirty": "5"
+    }
+}
