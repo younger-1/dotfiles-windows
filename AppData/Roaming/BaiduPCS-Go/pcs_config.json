@@ -1,0 +1,29 @@
+{
+ "baidu_active_uid": 2427981245,
+ "baidu_user_list": [
+  {
+   "uid": 2427981245,
+   "name": "lmnhnml",
+   "sex": "unknown",
+   "age": 4.3,
+   "bduss": "WMySlRGLVdHOGc0bXhTMlVQOS1nbVN2SW9ZMWR-am1KZ2tCbkkyUmpSZWJZdlZlRUFBQUFBJCQAAAAAAAAAAAEAAAC9DbiQbG1uaG5tbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJvVzV6b1c1ea",
+   "ptoken": "f9df10f5c02f7ec160560bfbdec69d6e",
+   "stoken": "ce601ae7ee9637dd1afac0aaf146b9d989a85ff106edcbeb3a1657dc30ac9f29",
+   "workdir": "/"
+  }
+ ],
+ "appid": 266719,
+ "cache_size": 65536,
+ "max_parallel": 8,
+ "max_upload_parallel": 8,
+ "max_download_load": 1,
+ "max_download_rate": 0,
+ "max_upload_rate": 0,
+ "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+ "pcs_ua": "",
+ "pan_ua": "netdisk;2.2.51.6;netdisk;10.0.63;PC;android-android",
+ "savedir": "C:\\Users\\younger\\scoop\\apps\\baiduPCS-Go\\3.6.2\\Downloads",
+ "enable_https": true,
+ "proxy": "",
+ "local_addrs": ""
+}
