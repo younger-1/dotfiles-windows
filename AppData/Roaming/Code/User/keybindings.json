@@ -1,0 +1,548 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+shift+/",
+        "command": "editor.action.blockComment",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+g space",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "extension.vim_ctrl+k",
+        "when": "editorTextFocus && vim.active && vim.use<C-k> && !inDebugRepl && vim.mode != 'Normal'"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "-extension.vim_ctrl+k",
+        "when": "editorTextFocus && vim.active && vim.use<C-k> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "extension.vim_ctrl+h",
+        "when": "editorTextFocus && vim.active && vim.use<C-h> && !inDebugRepl && vim.mode!='Normal'"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "-extension.vim_ctrl+h",
+        "when": "editorTextFocus && vim.active && vim.use<C-h> && !inDebugRepl"
+    },
+    {
+        "key": "shift+alt+-",
+        "command": "workbench.action.terminal.focusPrevious"
+    },
+    {
+        "key": "shift+alt+=",
+        "command": "workbench.action.terminal.focusNext"
+    },
+    {
+        "key": "ctrl+numpad6",
+        "command": "workbench.action.terminal.rename"
+    },
+    {
+        "key": "ctrl+numpad5",
+        "command": "workbench.action.terminal.resizePaneUp"
+    },
+    {
+        "key": "ctrl+numpad2",
+        "command": "workbench.action.terminal.resizePaneDown"
+    },
+    {
+        "key": "ctrl+m ctrl+t",
+        "command": "markdown.extension.toc.create",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+m m",
+        "command": "markdown.extension.editing.toggleMath",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "-markdown.extension.editing.toggleMath",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+m x",
+        "command": "md-shortcut.toggleCheckboxes",
+        "when": "editorTextFocus && markdownShortcuts:enabled"
+    },
+    {
+        "key": "ctrl+m ctrl+x",
+        "command": "-md-shortcut.toggleCheckboxes",
+        "when": "editorTextFocus && markdownShortcuts:enabled"
+    },
+    {
+        "key": "ctrl+m ctrl+x",
+        "command": "markdown.extension.checkTaskList",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "alt+c",
+        "command": "-markdown.extension.checkTaskList",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+m l",
+        "command": "md-shortcut.toggleLink",
+        "when": "editorTextFocus && markdownShortcuts:enabled"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-md-shortcut.toggleLink",
+        "when": "editorTextFocus && markdownShortcuts:enabled"
+    },
+    {
+        "key": "ctrl+m ctrl+l",
+        "command": "md-shortcut.toggleImage",
+        "when": "editorTextFocus && markdownShortcuts:enabled"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "-md-shortcut.toggleImage",
+        "when": "editorTextFocus && markdownShortcuts:enabled"
+    },
+    {
+        "key": "ctrl+m t",
+        "command": "md-shortcut.addTable",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+m q",
+        "command": "md-shortcut.toggleCitations",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+    },
+    {
+        "key": "alt+oem_2",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "alt+=",
+        "command": "workbench.action.nextPanelView"
+    },
+    {
+        "key": "alt+-",
+        "command": "workbench.action.previousPanelView"
+    },
+    {
+        "key": "ctrl+m p",
+        "command": "markdown.showPreviewSecuritySelector",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+m v",
+        "command": "markdown.showLockedPreviewToSide",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+x",
+        "command": "workbench.extensions.action.showInstalledExtensions"
+    },
+    {
+        "key": "alt+numpad4",
+        "command": "workbench.action.terminal.kill"
+    },
+    {
+        "key": "ctrl+m b",
+        "command": "md-shortcut.toggleBold",
+        "when": "editorTextFocus && markdownShortcuts:enabled"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-md-shortcut.toggleBold",
+        "when": "editorTextFocus && markdownShortcuts:enabled"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "-md-shortcut.toggleItalic",
+        "when": "editorTextFocus && markdownShortcuts:enabled"
+    },
+    {
+        "key": "ctrl+m ctrl+i",
+        "command": "md-shortcut.toggleStrikethrough",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "md-shortcut.toggleInlineCode",
+        "when": "editorTextFocus && markdownShortcuts:enabled"
+    },
+    {
+        "key": "ctrl+m ctrl+i",
+        "command": "-md-shortcut.toggleInlineCode",
+        "when": "editorTextFocus && markdownShortcuts:enabled"
+    },
+    {
+        "key": "ctrl+m k",
+        "command": "md-shortcut.toggleCodeBlock",
+        "when": "editorTextFocus && markdownShortcuts:enabled"
+    },
+    {
+        "key": "ctrl+m ctrl+c",
+        "command": "-md-shortcut.toggleCodeBlock",
+        "when": "editorTextFocus && markdownShortcuts:enabled"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "markdown.extension.editing.toggleList",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+m n",
+        "command": "markdown.extension.toc.addSecNumbers",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+m ctrl+n",
+        "command": "markdown.extension.toc.removeSecNumbers",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+m shift+m",
+        "command": "markdown.extension.editing.toggleMathReverse",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "shift+alt+c",
+        "command": "copyFilePath"
+    },
+    {
+        "key": "shift+alt+c",
+        "command": "-copyFilePath",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "ctrl+k j",
+        "command": "editor.action.joinLines"
+    },
+    {
+        "key": "ctrl+k ctrl+r",
+        "command": "workbench.action.evenEditorWidths"
+    },
+    {
+        "key": "ctrl+k shift+alt+c",
+        "command": "copyRelativeFilePath"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+c",
+        "command": "-copyRelativeFilePath",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+i",
+        "command": "editor.action.showDefinitionPreviewHover"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+f",
+        "command": "search.action.openEditor"
+    },
+    {
+        "key": "shift+f3",
+        "command": "-hediet.vscode-drawio.linkCodeWithSelectedNode"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+b",
+        "command": "workbench.action.tasks.test"
+    },
+    {
+        "key": "ctrl+numpad_subtract",
+        "command": "-workbench.action.zoomOut"
+    },
+    {
+        "key": "ctrl+k ctrl+alt+k",
+        "command": "workbench.extensions.action.showDisabledExtensions"
+    },
+    {
+        "key": "ctrl+n n",
+        "command": "workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "-workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "ctrl+k t",
+        "command": "workbench.action.tasks.runTask"
+    },
+    {
+        "key": "alt+f9",
+        "command": "editor.debug.action.addLogPoint"
+    },
+    {
+        "key": "ctrl+numpad0",
+        "command": "-workbench.action.zoomReset"
+    },
+    {
+        "key": "ctrl+n r",
+        "command": "code-runner.run"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "-code-runner.run"
+    },
+    {
+        "key": "shift+alt+s",
+        "command": "extension.sendLocation"
+    },
+    {
+        "key": "ctrl+e ctrl+f",
+        "command": "sqltools.formatSql",
+        "when": "editorTextFocus && !editorReadonly && eitorLangId == 'sql'"
+    },
+    {
+        "key": "ctrl+e ctrl+b",
+        "command": "-sqltools.formatSql",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+e ctrl+b",
+        "command": "sqltools.bookmarkSelection",
+        "when": "editorTextFocus && eitorLangId == 'sql'"
+    },
+    {
+        "key": "ctrl+e ctrl+q",
+        "command": "-sqltools.bookmarkSelection",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+e ctrl+r",
+        "command": "-sqltools.deleteBookmark"
+    },
+    {
+        "key": "ctrl+e ctrl+r",
+        "command": "sqltools.runFromBookmarks",
+        "when": "eitorLangId == 'sql'"
+    },
+    {
+        "key": "ctrl+e ctrl+a",
+        "command": "-sqltools.runFromBookmarks"
+    },
+    {
+        "key": "ctrl+e ctrl+a",
+        "command": "sqltools.showRecords",
+        "when": "eitorLangId == 'sql'"
+    },
+    {
+        "key": "ctrl+e ctrl+s",
+        "command": "-sqltools.showRecords"
+    },
+    {
+        "key": "ctrl+n v",
+        "command": "toggleVim"
+    },
+    {
+        "key": "ctrl+n ctrl+v",
+        "command": "open-in-vim.open"
+    },
+    {
+        "key": "ctrl+g h",
+        "command": "git.viewFileHistory"
+    },
+    {
+        "key": "alt+h",
+        "command": "-git.viewFileHistory"
+    },
+    {
+        "key": "ctrl+g shift+h",
+        "command": "git.viewHistory"
+    },
+    {
+        "key": "ctrl+shift+g ctrl+h",
+        "command": "extension.git-file-history"
+    },
+    {
+        "key": "ctrl+n ctrl+o",
+        "command": "extension.open"
+    },
+    {
+        "key": "ctrl+alt+o",
+        "command": "-extension.open"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-markdown.extension.editing.toggleBold",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "-markdown.extension.editing.toggleItalic",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+    },
+    {
+        "key": "alt+s",
+        "command": "-markdown.extension.editing.toggleStrikethrough",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+m i",
+        "command": "markdown.extension.editing.toggleItalic",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+g ctrl+g",
+        "command": "workbench.view.scm"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "-workbench.view.scm"
+    },
+    {
+        "key": "ctrl+shift+g shift+s",
+        "command": "gitlens.showQuickStashList"
+    },
+    {
+        "key": "ctrl+shift+g b",
+        "command": "gitlens.showQuickBranchHistory"
+    },
+    {
+        "key": "ctrl+shift+g f",
+        "command": "gitlens.showCommitSearch"
+    },
+    {
+        "key": "ctrl+shift+g shift+b",
+        "command": "gitlens.toggleFileBlame",
+        "when": "editorTextFocus && config.gitlens.keymap == 'chorded' && gitlens:activeFileStatus =~ /blameable/"
+    },
+    {
+        "key": "ctrl+shift+g b",
+        "command": "-gitlens.toggleFileBlame",
+        "when": "editorTextFocus && config.gitlens.keymap == 'chorded' && gitlens:activeFileStatus =~ /blameable/"
+    },
+    {
+        "key": "ctrl+shift+g shift+c",
+        "command": "gitlens.showQuickCommitDetails"
+    },
+    {
+        "key": "ctrl+shift+g m",
+        "command": "gitlens.switchMode"
+    },
+    {
+        "key": "ctrl+shift+g w",
+        "command": "gitlens.views.switchToAnotherBranch"
+    },
+    {
+        "key": "ctrl+shift+g shift+d",
+        "command": "gitlens.diffHeadWith"
+    },
+    {
+        "key": "ctrl+shift+g o",
+        "command": "gitlens.openFileRevision"
+    },
+    {
+        "key": "ctrl+shift+g shift+o",
+        "command": "gitlens.openFileRevisionFrom"
+    },
+    {
+        "key": "ctrl+shift+g d",
+        "command": "gitlens.diffWorkingWith"
+    },
+    {
+        "key": "ctrl+shift+g q",
+        "command": "gitlens.openChangedFiles"
+    },
+    {
+        "key": "ctrl+shift+g shift+q",
+        "command": "gitlens.closeUnchangedFiles"
+    },
+    {
+        "key": "ctrl+g g",
+        "command": "git-graph.view"
+    },
+    {
+        "key": "ctrl+g ctrl+o",
+        "command": "outline.focus"
+    },
+    {
+        "key": "ctrl+g ctrl+t",
+        "command": "timeline.focus"
+    },
+    {
+        "key": "ctrl+g ctrl+b",
+        "command": "bookmarksExplorer.focus"
+    },
+    {
+        "key": "ctrl+k f",
+        "command": "workbench.files.action.focusFilesExplorer"
+    },
+    {
+        "key": "ctrl+k shift+c",
+        "command": "workbench.files.action.compareFileWith"
+    },
+    {
+        "key": "shift+;",
+        "command": "vim.showQuickpickCmdLine",
+        "when": "editorTextFocus && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+;",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "ctrl+k shift+v",
+        "command": "markdown.marp.showQuickPick"
+    },
+    {
+        "key": "ctrl+k ctrl+m",
+        "command": "editor.action.toggleTabFocusMode"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "-editor.action.toggleTabFocusMode"
+    },
+    // 越下面越优先执行，所以 `ctrl-j` 位于所有  `ctrl-j` 前缀的 combo-key 之后
+    {
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    // 越下面越优先执行，所以 `ctrl-k` 位于所有  `ctrl-k` 前缀的 combo-key 之后
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    // 方便在 vscode 悬浮部件中上下移动
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenNavigateNext",
+        "when": "inQuickOpen"
+    },
+    // 方便在 vscode 悬浮部件中上下移动
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenNavigatePrevious",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+n c",
+        "command": "code-runner.runCustomCommand"
+    },
+    {
+        "key": "ctrl+alt+k",
+        "command": "-code-runner.runCustomCommand"
+    },
+    {
+        "key": "ctrl+n shift+r",
+        "command": "code-runner.runByLanguage"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "-code-runner.runByLanguage"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "breadcrumbs.focusPrevious",
+        "when": "breadcrumbsActive && breadcrumbsVisible"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "breadcrumbs.focusNext",
+        "when": "breadcrumbsActive && breadcrumbsVisible"
+    },
+    {
+        "key": "ctrl+n t",
+        "command": "leetcode.testSolution"
+    }
+]
