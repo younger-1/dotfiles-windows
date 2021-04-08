@@ -1,53 +1,54 @@
 [credential]
-	helper = manager-core
+    helper = manager-core
 [user]
-	name = younger
-	email = 45989017+younger-1@users.noreply.github.com
-	signingkey = AB04775E81D89564
+    name = younger
+    email = 45989017+younger-1@users.noreply.github.com
+    signingkey = AB04775E81D89564
 [core]
-	editor = code --wait
-	autocrlf = true
-	quotepath = false
-	pager = delta
-	# pager = delta --plus-color="#012800" --minus-color="#340001" --theme='Solarized (dark)'
+    editor = code --wait
+    # autocrlf = true
+    autocrlf = input
+    quotepath = false
+    pager = delta
+    # pager = delta --plus-color="#012800" --minus-color="#340001" --theme='Solarized (dark)'
 [pull]
-	rebase = true
+    rebase = true
 [fetch]
-	prune = false
+    prune = false
 [rebase]
-	autoStash = true
+    autoStash = true
 
 [alias]
-	go = log --all --graph --decorate --oneline
-	gg = log --all --graph --pretty='%C(auto)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --color
-	ls = log --graph --pretty=format:\"%C(yellow)%h %C(blue)%ad %C(red)%d %C(reset)%s %C(green)[%cn]\" --decorate --date=short
-	hist = log --pretty=format:\"%C(yellow)%h %C(red)%d %C(reset)%s %C(green)[%an] %C(blue)%ad\" --topo-order --graph --date=short
-	hist = log --pretty=format:\"%C(yellow)%h %C(red)%d %C(reset)%s %C(green)[%an] %C(blue)%ad\" --topo-order --graph --date=short
-	latest = for-each-ref --sort=-committerdate --format=\"%(committerdate:short): @%(committername) \t\t\t\t %(refname:short) \n\t    %(contents)\" --color=auto
-	c = checkout
-	cp = cherry-pick
-	s = status
-	ss = status -sb
-	b = branch
-	sb = show-branch
-	d = diff
-	dd = diff --stat
-	ds = diff --staged
-	dt = difftool
-	count = rev-list --all --count
-	ps = !which onefetch && onefetch
-	lf = ls-files
+    go = log --all --graph --decorate --oneline
+    gg = log --all --graph --pretty='%C(auto)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --color
+    ls = log --graph --pretty=format:\"%C(yellow)%h %C(blue)%ad %C(red)%d %C(reset)%s %C(green)[%cn]\" --decorate --date=short
+    hist = log --pretty=format:\"%C(yellow)%h %C(red)%d %C(reset)%s %C(green)[%an] %C(blue)%ad\" --topo-order --graph --date=short
+    hist = log --pretty=format:\"%C(yellow)%h %C(red)%d %C(reset)%s %C(green)[%an] %C(blue)%ad\" --topo-order --graph --date=short
+    latest = for-each-ref --sort=-committerdate --format=\"%(committerdate:short): @%(committername) \t\t\t\t %(refname:short) \n\t    %(contents)\" --color=auto
+    c = checkout
+    cp = cherry-pick
+    s = status
+    ss = status -sb
+    b = branch
+    sb = show-branch
+    d = diff
+    dd = diff --stat
+    ds = diff --staged
+    dt = difftool
+    count = rev-list --all --count
+    ps = !which onefetch && onefetch
+    lf = ls-files
 
 [delta]
-	# syntax-theme = DarkNeon
-	# syntax-theme = Dracula
-	# side-by-side = true
-	# features = line-numbers decorations
-	line-numbers = true
-	# line-numbers-left-format = "🚀"
+    # syntax-theme = DarkNeon
+    # syntax-theme = Dracula
+    # side-by-side = true
+    # features = line-numbers decorations
+    line-numbers = true
+    # line-numbers-left-format = "🚀"
     # line-numbers-right-format = "{np:>3}│"
-	# minus-style = red bold ul "#ffeeee"
+    # minus-style = red bold ul "#ffeeee"
 [delta "decorations"]
     commit-decoration-style = bold yellow box ul
     file-style = bold yellow ul
@@ -60,34 +61,34 @@
     line-numbers-plus-style = 28
 
 [commit]
-	gpgsign = true
-	template = ~/.gitmessage
+    gpgsign = true
+    template = ~/.gitmessage
 [interactive]
     diffFilter = delta --color-only
 [color]
-	ui = auto
+    ui = auto
 [gui]
-	encoding = utf-8
-	pruneDuringFetch = true
+    encoding = utf-8
+    pruneDuringFetch = true
 [http]
-	sslVerify = true
-	postBuffer = 524288000
+    sslVerify = true
+    postBuffer = 524288000
 
 [merge]
-	tool = vscode
-	guitool = vscode
+    tool = vscode
+    guitool = vscode
 [mergetool "vscode"]
-	cmd = code --wait $MERGED
+    cmd = code --wait $MERGED
 [diff]
-	tool = vscode
-	guitool = vscode
+    tool = vscode
+    guitool = vscode
 [difftool "vscode"]
-	cmd = code --wait --diff $LOCAL $REMOTE
+    cmd = code --wait --diff $LOCAL $REMOTE
 
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
 [init]
-	defaultBranch = main
+    defaultBranch = main
