@@ -1,0 +1,122 @@
+{
+  "settingsVersion": "1.66",
+  "exclusionRules": [
+    {
+      "pattern": "https?://mail.google.com/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://www.speedtypingonline.com/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://type-fu.com/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://typing.io/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://www.typingbolt.com/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://need-for-type.github.io/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://online.tipp10.com/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://www.typing.com/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://www.typingclub.com/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://playbiolab.com/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://impactjs.com/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://zty.pe/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://phoboslab.org/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://www.typingtest.com/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://thetypingcat.com/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://api.ihint.me/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://localhost:8889/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://www.openvim.com/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://vim-adventures.com/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://try.redis.io/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://learngitbranching.js.org/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://localhost:8888/notebooks/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://127.0.0.1:8888/notebooks/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://colab.research.google.com/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://www.numworks.com/*",
+      "passKeys": ""
+    }
+  ],
+  "filterLinkHints": false,
+  "waitForEnterForFilteredHints": true,
+  "hideHud": false,
+  "keyMappings": "# Insert your preferred key mappings here.\n\nmap s Vomnibar.activateInNewTab keyword=gh\n\nmap <c-]> passNextKey\n\nmap q createTab window\nmap Q createTab incognito\n\nmap ef LinkHints.activateModeToOpenInNewForegroundTab count=999999\n\nmap m Marks.activateCreateMode swap\nmap ` Marks.activateGotoMode swap\n\nmap R reload hard\n\nmap < moveTabLeft\nmap > moveTabRight",
+  "linkHintCharacters": "sadfjklewcmpgh",
+  "linkHintNumbers": "0123456789",
+  "newTabUrl": "about:newtab",
+  "nextPatterns": "next,more,newer,>,›,→,»,≫,>>,下一页,下页,下一頁,下頁,下一篇",
+  "previousPatterns": "prev,previous,back,older,<,‹,←,«,≪,<<,上一页,上页,上一頁,上頁,上一篇",
+  "regexFindMode": false,
+  "ignoreKeyboardLayout": false,
+  "scrollStepSize": 100,
+  "smoothScroll": true,
+  "grabBackFocus": true,
+  "searchEngines": "# https://github.com/daturkel/custom-search-engines\n\n# programming\nar: https://web.archive.org/web/*/%s Web Archive🧿 blank=https://web.archive.org\ncode: https://code.visualstudio.com/Search?q=%s\ngh: https://github.com/search?q=%s GitHub😎\nghi: https://github.com/issues?Outf8=✓&q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22++%s Github Issues\ngitee: https://search.gitee.com/?skin=rec&type=repository&q=%s Gitee\nso: https://stackoverflow.com/search?q=%s StackOverflow\nsu: https://superuser.com/search?q=%s SuperUser\nsut: https://superuser.com/questions/tagged/%s SuperUser Tag\njj: https://juejin.im/search?query=%s&type=all 掘金\nsf: https://segmentfault.com/search?q=%s Segmentfault\nv2: https://cn.bing.com/search?q=site:v2ex.com%20%s&FORM=BESBTB&ensearch=1 v2ex-bing\nosc: https://www.oschina.net/search?scope=all&q=%s 开源中国\nsh: http://symbolhound.com/?q=%s SymbolHound\ntrello: https://trello.com/search?q=%s Trello\n\n# form\nzh: https://www.zhihu.com/search?type=content&q=%s 知乎\njs: https://www.jianshu.com/search?q=%s&page=1&type=note 简书\ndb: https://www.douban.com/search?q=%s 豆瓣\nhp: https://my.hupu.com/search?q=%s&fid=&type=undefined&sortby=general 虎扑步行街\n\n# app\nssp|sspai: https://sspai.com/search/post/t%s 少数派\nith: https://dyn.ithome.com/search/adt_all_%s_0.html IT之家\nxz: https://www.appinn.com/?s=%s 小众软件\ntool: https://tool.lu/search/?query=%s 在线工具\n\n# recreation\nwb: https://s.weibo.com/weibo/%s?frm=opensearch 微博\ntb: http://tieba.baidu.com/f?ie=utf-8&kw=%s 贴吧\njz: https://www.juzimi.com/search/node/%s%20type:sentence 句子迷\n\n# search\nbi: https://cn.bing.com/search?q=%s Bing\nqw: https://www.qwant.com/?q=%s Qwant\nydc: https://yandex.com/search/?text=%s Yandex.com\nyd: https://yandex.ru/search/?text=%s Yandex.ru\nbd: https://www.baidu.com/s?ie=UTF-8&wd=%s 百度\nsg: https://www.sogou.com/web?ie=UTF-8&query=%s 搜狗\n360: https://www.so.com/s?ie=UTF-8&q=%s 360\nduck: https://duckduckgo.com/?q=%s DuckDuckGo\nyahoo: https://search.yahoo.com/search?p=%s&ei=UTF-8 yahoo\n\n\n# google\ngo: https://www.google.com/search?q=%s Google\ngl: https://www.google.com/search?q=%s&btnI I'm feeling lucky.\ngi: https://www.google.com/search?tbm=isch&q=%s Google Images\ngm: https://www.google.com/maps?q=%s Google maps\ngmail: https://mail.google.com/mail/u/0/#search/%s Google Mail👨‍💻\ngt: https://translate.google.cn/?source=osdd#auto|auto|%s Google Translator..\ngr: https://www.google.com/search?hl=en&tbo=1&tbs=qdr:y&q=%s Google (last year only)\n\n# dictionary\nwiki: https://www.wikipedia.org/w/index.php?title=Special:Search&search=%s Wikipedia\nwk: https://zh.wikipedia.org/w/index.php?title=Special:Search&search=%s Wiki-cn🎭\nw: https://en.wikipedia.org/wiki/Special:Search?search=%s Wikipedia\nwa: https://www.wolframalpha.com/input/?i=%s Wolfram|Alpha\nol: https://dict.eudic.net/dicts/en/%s 欧路词典\nicb: www.iciba.com/%s 金山词霸\nvo: https://www.vocabulary.com/dictionary/%s Vocabulary\ndic: https://dictionary.com/browse/%s Dictionary\nthe: httpsO://thesaurus.com/browse/%s Thesaurus\nub: https://www.urbandictionary.com/define.php?term=%s UrbanDictionary\nmw: http://www.merriam-webster.com/dictionary/%s Merriam-Webster\nphrase: https://www.phrases.org.uk/meanings/%s.html Phrase\nabbr: https://www.abbreviations.com/%s Abbreviations\n\n# video\nimdb: https://www.imdb.com/find?s=all&q=%s IMDB\nbl: https://search.bilibili.com/all?keyword=%s Bilibili\nacfun: https://www.acfun.cn/search?keyword=%s Acfun\n\n## hh\nyt: https://www.youtube.com/results?search_query=%s YouTube\nxv: https://www.xvideos.com/?k=%s Xvideos\n\n# shopping\naz: https://www.amazon.com/s/?field-keywords=%s Amazon\namazon: https://www.amazon.com/exec/obidos/external-search/?field-keywords=%s&mode=blended Amazon\nebay: https://www.ebay.com/sch/?_nkw=%s eBay\n\n# other\n# Find your way from your home to places using Google Maps\nhome: https://www.google.com/maps/dir/home/%s Map🐧\n\n# Use bing to search the current site you're on\nb: javascript:location='https://cn.bing.com/search?q=site:'+escape(location.hostname)+'+%s' Bing🥶\n# Use google to search the current site you're on\ng: javascript:location='https://www.google.com/search?num=100&q=site:'+escape(location.hostname)+'+%s' Google🐘",
+  "searchUrl": "https://www.bing.com/search?q=",
+  "userDefinedLinkHintCss": "div > .vimiumHintMarker {\n/* linkhint boxes */\nbackground: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFF785),\n  color-stop(100%,#FFC542));\nborder: 1px solid #E3BE23;\n}\n\ndiv > .vimiumHintMarker span {\n/* linkhint text */\ncolor: black;\nfont-weight: bold;\nfont-size: 12px;\n}\n\ndiv > .vimiumHintMarker > .matchingCharacter {\n}"
+}
