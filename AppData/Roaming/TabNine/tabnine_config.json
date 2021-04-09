@@ -6,10 +6,10 @@
   "creation_time": "2020-06-06T01:38:20.613781200Z",
   "guuid": null,
   "semantic_status": {
-    "python": "Enabled",
+    "cpp": "Enabled",
     "toml": "Enabled",
-    "rust": "Enabled",
-    "cpp": "Enabled"
+    "python": "Enabled",
+    "rust": "Enabled"
   },
   "enable_telemetry": false,
   "user_understands_that_enabling_tabnine_cloud_sends_code_to_tabnine_servers": true,
