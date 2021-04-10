@@ -24,9 +24,9 @@
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --color
     ls = log --graph --pretty=format:\"%C(yellow)%h %C(blue)%ad %C(red)%d %C(reset)%s %C(green)[%cn]\" --decorate --date=short
     hist = log --pretty=format:\"%C(yellow)%h %C(red)%d %C(reset)%s %C(green)[%an] %C(blue)%ad\" --topo-order --graph --date=short
-    hist = log --pretty=format:\"%C(yellow)%h %C(red)%d %C(reset)%s %C(green)[%an] %C(blue)%ad\" --topo-order --graph --date=short
     latest = for-each-ref --sort=-committerdate --format=\"%(committerdate:short): @%(committername) \t\t\t\t %(refname:short) \n\t    %(contents)\" --color=auto
-    c = checkout
+    c = commit
+    co = checkout
     cp = cherry-pick
     s = status
     ss = status -sb
@@ -71,7 +71,7 @@
     encoding = utf-8
     pruneDuringFetch = true
 [http]
-    sslVerify = true
+    # sslVerify = true
     postBuffer = 524288000
 
 [merge]
