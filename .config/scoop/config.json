@@ -1,14 +1,15 @@
 {
-    "lastupdate":  "2021-04-07T23:06:12.7002949+08:00",
-    "SCOOP_REPO":  "https://github.com/lukesampson/scoop",
-    "SCOOP_BRANCH":  "master",
-    "aria2-enabled":  true,
-    "aria2-retry-wait":  4,
-    "alias":  {
-                  "upgrade":  "scoop-upgrade",
-                  "rm":  "scoop-rm"
-              },
-    "aria2-split":  5,
-    "aria2-max-connection-per-server":  5,
-    "aria2-min-split-size":  "5M"
+  "lastupdate": "2021-04-25T19:07:13.9433779+08:00",
+  "SCOOP_REPO": "https://github.com/lukesampson/scoop",
+  "SCOOP_BRANCH": "master",
+  "aria2-enabled": true,
+  "aria2-retry-wait": 4,
+  "alias": {
+    "upgrade": "scoop-upgrade",
+    "rm": "scoop-rm"
+  },
+  "aria2-split": 16,
+  "aria2-max-connection-per-server": 16,
+  "aria2-min-split-size": "4M",
+  "shim": "kiennq"
 }
