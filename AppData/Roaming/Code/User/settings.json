@@ -1,6 +1,37 @@
 {
+    "settingsSync.ignoredSettings": [
+        "leetcode.workspaceFolder",
+        "vim.autoSwitchInputMethod.enable",
+        "vim.autoSwitchInputMethod.defaultIM",
+        "vim.autoSwitchInputMethod.obtainIMCmd",
+        "vim.autoSwitchInputMethod.switchIMCmd",
+        "lldb.adapterEnv",
+        "shellformat.path",
+        "java.configuration.maven.userSettings",
+        "remote-github.keystorePath",
+        "remote-github.mountPoint",
+        "projectManager.vscode.baseFolders",
+        "projectManager.git.baseFolders",
+        "open-in-vim.integrated-terminal.pathToShell",
+        "-jupyter.alwaysTrustNotebooks"
+    ],
     "FSharp.useSdkScripts": true,
     "FSharp.suggestGitignore": false,
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, AllowShortIfStatementsOnASingleLine: false}",
+    "C_Cpp.intelliSenseCacheSize": 2000,
+    // "C_Cpp.errorSquiggles": "Disabled",
+    // "C_Cpp.autocomplete": "Disabled",
+    // "C_Cpp.suggestSnippets": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "sqltools.historySize": 500,
+    "sqltools.format": {
+        "language": "sql",
+        "linesBetweenQueries": 2,
+        "reservedWordCase": "upper"
+    },
+    "cloudmusic.account.autoCheck": true,
+    "todo-tree.tree.showScanModeButton": false,
+    "open-in-vim.integrated-terminal.pathToShell": "C:\\Users\\younger\\scoop\\apps\\git\\current\\bin\\bash.exe",
     "editor.fontSize": 16,
     "editor.formatOnSave": true,
     "editor.fontFamily": "'FuraCode NF', 'JetBrainsMono NF', 'Cascadia Code', 'SauceCodePro NF Light', 'DejaVuSansMono NF', Consolas",
@@ -67,7 +98,6 @@
         "**/.factorypath": true
     },
     "workbench.editor.enablePreviewFromQuickOpen": true,
-    "vim.smartRelativeLine": true,
     "bookmarks.saveBookmarksInProject": true,
     "search.searchEditor.reusePriorSearchConfiguration": true,
     "[jsonc]": {
@@ -93,11 +123,6 @@
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "update.enableWindowsBackgroundUpdates": false,
-    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, AllowShortIfStatementsOnASingleLine: false}",
-    "C_Cpp.intelliSenseCacheSize": 2000,
-    // "C_Cpp.errorSquiggles": "Disabled",
-    // "C_Cpp.autocomplete": "Disabled",
-    // "C_Cpp.suggestSnippets": false,
     "indentRainbow.ignoreErrorLanguages": [
         "markdown",
         "python",
@@ -130,10 +155,6 @@
         "solution",
         "description"
     ],
-    "settingsSync.ignoredSettings": [
-        "projectManager.vscode.baseFolders",
-        "projectManager.git.baseFolders",
-    ],
     "vim.useCtrlKeys": false,
     "vim.handleKeys": {
         "<C-c>": false,
@@ -156,8 +177,10 @@
     "vim.commandLineModeKeyBindings": [],
     "vim.foldfix": true,
     "vim.startofline": false,
-    // "vim.useSystemClipboard": true,
-    // "vim.enableNeovim": true,
+    "vim.smartRelativeLine": true,
+    "vim.neovimPath": "C:\\Users\\younger\\scoop\\shims\\nvim.exe",
+    // "vim.autoSwitchInputMethod.enable": true,
+    // "vim.autoSwitchInputMethod.defaultIM": "1033",
     "vim.autoSwitchInputMethod.enable": true,
     "vim.autoSwitchInputMethod.defaultIM": "1033",
     "vim.autoSwitchInputMethod.obtainIMCmd": "C:/Users/younger/im-select.exe",
@@ -413,7 +436,8 @@
         "_vimrc": "viml",
         "_gvimrc": "viml",
         "*.vssettings": "xml",
-        "vimrc": "viml"
+        "vimrc": "viml",
+        ".spacemacs": "lisp"
     },
     "http.proxySupport": "off",
     "indentRainbow.excludedLanguages": [
@@ -439,9 +463,9 @@
     "java.completion.guessMethodArguments": true,
     "java.refactor.renameFromFileExplorer": "preview",
     "java.project.importOnFirstTimeStartup": "automatic",
+    // "open-in-vim.useNeovim": true,
     "open-in-vim.restoreCursorAfterVim": true,
     "rust-analyzer.debug.engine": "vadimcn.vscode-lldb",
-    "rust-analyzer.serverPath": "C:/Users/younger/scoop/apps/rust-analyzer/current/rust-analyzer.exe",
     "lldb.adapterEnv": {
         "PYTHONHOME": "C:\\Users\\younger\\scoop\\apps\\miniconda3\\current"
     },
@@ -510,9 +534,6 @@
     "files.defaultLanguage": "${activeEditorLanguage}",
     "zenMode.hideStatusBar": false,
     "zenMode.hideLineNumbers": false,
-    "todo-tree.tree.showScanModeButton": false,
-    "open-in-vim.integrated-terminal.pathToShell": "C:\\Users\\younger\\scoop\\apps\\git\\current\\bin\\bash.exe",
-    "vim.neovimPath": "C:\\Users\\younger\\scoop\\shims\\nvim.exe",
     "timeline.excludeSources": [],
     "diffEditor.codeLens": true,
     "git.enableSmartCommit": true,
@@ -574,7 +595,6 @@
         "--line-length",
         "100"
     ],
-    "jupyter.alwaysTrustNotebooks": true,
     "[rust]": {
         "editor.defaultFormatter": "matklad.rust-analyzer"
     },
@@ -628,18 +648,11 @@
             80,
         ]
     },
-    "liveServer.settings.donotShowInfoMsg": true,
     "window.autoDetectColorScheme": true,
     "workbench.preferredDarkColorTheme": "One Monokai",
     "workbench.preferredLightColorTheme": "Atom One Light",
-    "sqltools.historySize": 500,
     "[sql]": {
         "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
-    },
-    "sqltools.format": {
-        "language": "sql",
-        "linesBetweenQueries": 2,
-        "reservedWordCase": "upper"
     },
     "extensions.ignoreRecommendations": false,
     "hediet.vscode-drawio.theme": "automatic",
@@ -661,7 +674,6 @@
     "git-graph.showStatusBarItem": false,
     "powermode.enabled": false,
     "powermode.presets": "flames",
-    "cloudmusic.account.autoCheck": true,
     "workbench.statusBar.visible": true,
     "markdown.marp.exportType": "html",
     "markdown.marp.toolbarButtonForQuickPick": false,
@@ -678,8 +690,11 @@
     ],
     "snippet.verbose": true,
     "shellformat.path": "C:/Users/younger/scoop/apps/shfmt/current/shfmt.exe",
+    "jupyter.alwaysTrustNotebooks": true,
     "workbench.colorTheme": "One Monokai",
     "go.toolsManagement.autoUpdate": true,
     "gitlens.mode.active": "zen",
     "vsicons.dontShowNewVersionMessage": true,
+    "rust-analyzer.server.path": "rust-analyzer",
+    "redhat.telemetry.enabled": true,
 }
