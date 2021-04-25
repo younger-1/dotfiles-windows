@@ -18,12 +18,14 @@
   "keyBinding": {
     // for example: 
     // "Always on Top": "Ctrl+Shift+P",
+    "Close": "Ctrl+Shift+W",
+    "Open Recent": "Ctrl+R",
+    "Quote": "Ctrl+Q",
     "Highlight": "Ctrl+H",
     "Link Reference": "Ctrl+Shift+R",
     "Footnotes": "Ctrl+Shift+G",
     "Task List": "Ctrl+Shift+T",
     "Toggle Task Status": "Ctrl+T",
-    "Quote": "Ctrl+Q",
     "Inline Math": "Ctrl+M",
     "Strike": "Ctrl+N",
     "Code": "Ctrl+G"
