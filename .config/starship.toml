@@ -1,16 +1,141 @@
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Use custom format:
+# format = """
+# [┌───────────────────>](bold green)
+# [│](bold green)$directory$rust$go$python$package
+# [└─>](bold green) """
+
+# Defauld:
+# format = """
+# $username\
+# $hostname\
+# $shlvl\
+# $kubernetes\
+# $directory\
+# $vcsh\
+# $git_branch\
+# $git_commit\
+# $git_state\
+# $git_status\
+# $hg_branch\
+# $docker_context\
+# $package\
+# $cmake\
+# $dart\
+# $deno\
+# $dotnet\
+# $elixir\
+# $elm\
+# $erlang\
+# $golang\
+# $helm\
+# $java\
+# $julia\
+# $kotlin\
+# $nim\
+# $nodejs\
+# $ocaml\
+# $perl\
+# $php\
+# $purescript\
+# $python\
+# $red\
+# $ruby\
+# $rust\
+# $scala\
+# $swift\
+# $terraform\
+# $vagrant\
+# $zig\
+# $nix_shell\
+# $conda\
+# $memory_usage\
+# $aws\
+# $gcloud\
+# $openstack\
+# $env_var\
+# $crystal\
+# $custom\
+# $cmd_duration\
+# $line_break\
+# $lua\
+# $jobs\
+# $battery\
+# $time\
+# $status\
+# $shell\
+# $character"""
+
+
+[line_break]
+# disabled = true
+
+[character]
 # Replace the "❯" symbol in the prompt with "➜"
-# [character] # The name of the module we are configuring is "character"
-success_symbol = "[➜](bold green)" # The "success_symbol" segment is being set to "➜" with the color "bold green"
+success_symbol = "[➜](bold yellow) "
 error_symbol = "[✗](bold red) "
+# success_symbol = "[](bold green)"
+# error_symbol = "[ﮊ](bold red)"
 
-# Disable the package module, hiding it from the prompt completely
+[memory_usage]
+disabled = false
+# threshold = 80
+symbol = " "
+style = "bold dimmed green"
+
+[battery]
+
+[[battery.display]]  # between 0% and 10%
+threshold = 15
+style = "bold red"
+[[battery.display]]  # between 10% and 30%
+threshold = 30
+style = "bold yellow"
+[[battery.display]]  # between 30% and 75%
+threshold = 45
+style = "bold blue"
+
+[directory]
+truncation_length = 4
+# fish_style_pwd_dir_length = 1
+
+[shell]
+fish_indicator = ""
+powershell_indicator = "_"
+# disabled = false
+
 [package]
-disabled = true
+# symbol = " "
+# disabled = true
 
+[conda]
+symbol = " "
+ignore_base = false
+
+[python]
+symbol = " "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[julia]
+symbol = " "
 
 [java]
+symbol = " "
 # symbol = "🍭 "
 # symbol = "🌟 "
 
-# Don't print a new line at the start of the prompt
-add_newline = false
+[nodejs]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[php]
+symbol = " "
