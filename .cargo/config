@@ -14,3 +14,6 @@ registry="git://crates.rustcc.com/crates.io-index"
 [http]
 #check-config = false
 check-revoke = false
+
+[build]
+rustc-wrapper = "sccache"
