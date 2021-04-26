@@ -24,4 +24,15 @@ dotfiles
 ~/.lc/
 ~/.picgo/
 %SCOOP%/persist/
+"~\AppData\Roaming\Rime"
+"~\AppData\Roaming\gitui"
+"~\AppData\Roaming\Hyper\.hyper.js"
+"~\AppData\Roaming\marktext\preferences.json"
+"~\AppData\Roaming\eDEX-UI\settings.json"
+"~\AppData\Roaming\extraterm\extraterm.json"
+"~\AppData\Roaming\emplace.toml"
+"~\AppData\Local\emplace"
+"~\AppData\Local\coc\ultisnips\cpp.snippets"
+"~\AppData\Local\Fork\settings.json"
+"AppData/Local/Microsoft/PowerToys/settings.json"
 ```
