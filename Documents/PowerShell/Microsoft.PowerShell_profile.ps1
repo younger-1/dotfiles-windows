@@ -32,6 +32,9 @@ $env:PYTHONIOENCODING = 'utf-8'
 # Python 直接执行
 $env:PATHEXT += ";.py"
 
+# [julia]
+$env:JULIA_PKG_SERVER = 'https://mirrors.tuna.tsinghua.edu.cn/julia'
+
 # [elixir]
 function ie { 
     iex.bat --werl
