@@ -1,5 +1,5 @@
 [credential]
-    helper = manager-core
+	helper = manager-core
 [user]
     name = younger
     email = 45989017+younger-1@users.noreply.github.com
@@ -39,6 +39,7 @@
     count = rev-list --all --count
     ps = !which onefetch && onefetch
     lf = ls-files
+    lt = ls-tree --full-tree -r --name-only HEAD
 
 [delta]
     # syntax-theme = DarkNeon
@@ -71,7 +72,7 @@
     encoding = utf-8
     pruneDuringFetch = true
 [http]
-    # sslVerify = true
+    sslVerify = true
     postBuffer = 524288000
 
 [merge]
