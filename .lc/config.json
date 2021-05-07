@@ -1,0 +1,9 @@
+{
+  "color": {
+    "theme": "molokai"
+  },
+  "autologin": {
+    "enable": true,
+    "retry": 2
+  }
+}

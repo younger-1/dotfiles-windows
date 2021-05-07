@@ -1,0 +1,9 @@
+{
+    "solution.discuss": true,
+    "company": true,
+    "cache": true,
+    "retry": true,
+    "leetcode.cn": true,
+    "leetcode": false,
+    "cookie.chrome": false
+}
