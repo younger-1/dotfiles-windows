@@ -140,11 +140,22 @@ function printTheme {
 # volta: npm helper
 (& volta completions powershell) | Out-String | Invoke-Expression
 
+# z.lua
+# Different from Search-NavigationHistory
+iex ($(lua $env:scoop\apps\z.lua\current\z.lua --init powershell enhanced) -join "`n")
+$env:_ZL_HYPHEN = 1
+$env:_ZL_ECHO = 1
+function zz { z -i $args }
+function zf { z -I $args }
+function zc { z -c $args }
+function zb { z -b $args }
+function zh { z -I -t . }
+
 # zoxide
-Invoke-Expression (& {
-        $hook = if ($PSVersionTable.PSVersion.Major -lt 6) { 'prompt' } else { 'pwd' }
-        (zoxide init --hook $hook powershell) -join "`n"
-    })
+# Invoke-Expression (& {
+#         $hook = if ($PSVersionTable.PSVersion.Major -lt 6) { 'prompt' } else { 'pwd' }
+#         (zoxide init --hook $hook powershell) -join "`n"
+#     })
 
 # scoop-completion
 Import-Module "$env:scoop/modules/scoop-completion" -ErrorAction SilentlyContinue

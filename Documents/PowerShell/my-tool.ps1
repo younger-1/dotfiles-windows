@@ -40,21 +40,14 @@ function dot {
 }
 
 
-# z.lua
-# Different from Search-NavigationHistory
-# iex ($(lua $env:scoop\apps\z.lua\current\z.lua --init powershell once enhanced) -join "`n")
-# $env:_ZL_HYPHEN = 1
-# $env:_ZL_ECHO = 1
-# function zc($name) { z -c $name }
-# function zb($name) { z -b $name }
-# function zz($name1, $name2) { z -i $name1 $name2 }
-# function zf($name1, $name2) { z -I $name1 $name2 }
-
 
 # PSFzf
-Set-PsFzfOption -PSReadlineChordReverseHistory 'Ctrl+r'
-# Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+t' 
-# Set-PSReadLineKeyHandler -Key Tab -ScriptBlock { Invoke-FzfTabCompletion }
+if (Get-Command Set-PsFzfOption -errorAction SilentlyContinue) {
+    Set-PsFzfOption -PSReadlineChordReverseHistory 'Ctrl+r'
+    # Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+t' 
+    # Set-PSReadLineKeyHandler -Key Tab -ScriptBlock { Invoke-FzfTabCompletion }
+}
+
 
 
 <############### Start of PowerTab Initialization Code ########################
@@ -138,7 +131,7 @@ function d {
 
 }
 function df {
-    fd --color=always --hidden --no-ignore --exclude .git . $args| `
+    fd --color=always --hidden --no-ignore --exclude .git . $args | `
         fzf --ansi --color=16 --multi --cycle `
         --height=110 --layout=reverse --border=sharp `
         --prompt='>>> ' --marker='| ' --info='inline' `
