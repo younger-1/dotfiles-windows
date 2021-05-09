@@ -8,6 +8,7 @@ Set-Alias smap Set-PSReadLineKeyHandler
 Set-Alias gmap Get-PSReadLineKeyHandler
 Set-Alias ww which
 Set-Alias ss scoop 
+Set-Alias nvi nvim 
 #-------------------------------    Set Alias END     -------------------------------
 
 # [Directory]

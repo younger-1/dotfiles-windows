@@ -1,5 +1,5 @@
 [credential]
-	helper = manager-core
+    helper = manager-core
 [user]
     name = younger
     email = 45989017+younger-1@users.noreply.github.com
@@ -71,9 +71,6 @@
 [gui]
     encoding = utf-8
     pruneDuringFetch = true
-[http]
-    sslVerify = true
-    postBuffer = 524288000
 
 [merge]
     tool = vscode
@@ -93,3 +90,9 @@
     required = true
 [init]
     defaultBranch = main
+[protocol "http"]
+    allow = always
+[http]
+    sslVerify = false
+    postBuffer = 524288000
+

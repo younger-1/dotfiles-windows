@@ -142,9 +142,10 @@ function printTheme {
 
 # z.lua
 # Different from Search-NavigationHistory
-iex ($(lua $env:scoop\apps\z.lua\current\z.lua --init powershell enhanced) -join "`n")
+iex ($(lua $env:scoop\apps\z.lua\current\z.lua --init powershell) -join "`n")
 $env:_ZL_HYPHEN = 1
 $env:_ZL_ECHO = 1
+# $env:_ZL_MATCH_MODE = 1
 function zz { z -i $args }
 function zf { z -I $args }
 function zc { z -c $args }
