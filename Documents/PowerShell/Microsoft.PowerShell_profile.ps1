@@ -142,21 +142,22 @@ function printTheme {
 
 # z.lua
 # Different from Search-NavigationHistory
-iex ($(lua $env:scoop\apps\z.lua\current\z.lua --init powershell) -join "`n")
 $env:_ZL_HYPHEN = 1
-$env:_ZL_ECHO = 1
-# $env:_ZL_MATCH_MODE = 1
-function zz { z -i $args }
-function zf { z -I $args }
-function zc { z -c $args }
-function zb { z -b $args }
-function zh { z -I -t . }
+# $env:_ZL_DATA = "$HOME/.zlua"
+# iex (& { (lua $env:scoop\apps\z.lua\current\z.lua --init powershell) -join "`n" } )
+# iex (& { (lua $env:scoop\apps\z.lua\current\z.lua --init powershell echo once) -join "`n" })
+# function zz { z -i $args }
+# function zf { z -I $args }
+# function zc { z -c $args }
+# function zb { z -b $args }
+# function zh { z -I -t . }
 
 # zoxide
-# Invoke-Expression (& {
-#         $hook = if ($PSVersionTable.PSVersion.Major -lt 6) { 'prompt' } else { 'pwd' }
-#         (zoxide init --hook $hook powershell) -join "`n"
-#     })
+$env:_ZO_ECHO = 1
+Invoke-Expression (& {
+        $hook = if ($PSVersionTable.PSVersion.Major -lt 6) { 'prompt' } else { 'pwd' }
+        (zoxide init --hook $hook powershell) -join "`n"
+    })
 
 # scoop-completion
 Import-Module "$env:scoop/modules/scoop-completion" -ErrorAction SilentlyContinue

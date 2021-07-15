@@ -62,8 +62,8 @@
     line-numbers-plus-style = 28
 
 [commit]
-    gpgsign = true
-    template = ~/.gitmessage
+    # gpgsign = true
+    # template = ~/.gitmessage
 [interactive]
     diffFilter = delta --color-only
 [color]
@@ -90,9 +90,13 @@
     required = true
 [init]
     defaultBranch = main
+
+# [url "https://github.com.cnpmjs.org/"]
+# [url "https://hub.fastgit.org/"]
+#     insteadOf = https://github.com/
+
 [protocol "http"]
     allow = always
 [http]
-    sslVerify = false
+	sslVerify = true
     postBuffer = 524288000
-

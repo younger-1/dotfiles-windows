@@ -12,11 +12,6 @@
       enabled: true,
     },
   },
-  app: {
-    autoStart: {
-      enabled: true,
-    },
-  },
   server: {
     intercepts: {
       'raw.githubusercontent.com': {

@@ -15,7 +15,7 @@ wt_layout_width := [0.6, 0.75, 0.95, 0.75]
 wt_layout_height := [0.5, 0.4, 0.3, 0.65]
 
 ;; Show the clipped text
-#`::
+!+`::
 MsgBox, 262144, Clip-board, %clipboard%
 return
 

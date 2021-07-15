@@ -29,10 +29,11 @@ $config = "$HOME/.config"
 $icon = "$config/oh-my-icon"
 $code = "$roamData/Code/User"
 $wt = "$localData/Microsoft/Windows Terminal/"
+$nvim = "$localData/nvim"
 
 $notes = "$HOME/desktop/Notes"
 $math = "C:\Users\didi\Desktop\数模\2020数学建模试题\2020年C题--面向康复工程的脑电信号分析和判别模型\附件1-P300脑机接口数据\S1"
-$book = "C:\Users\didi\Desktop\source\rust\vrp\docs\src"
+$book = "~/Documents/0-Book and Materials/"
 
 
 # [File]
