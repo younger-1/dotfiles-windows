@@ -17,6 +17,8 @@
     prune = false
 [rebase]
     autoStash = true
+[submodule]
+    recurse = true
 
 [alias]
     go = log --all --graph --decorate --oneline
