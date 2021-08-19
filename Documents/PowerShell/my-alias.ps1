@@ -12,10 +12,14 @@ Set-Alias nvi nvim
 #-------------------------------    Set Alias END     -------------------------------
 
 # [Directory]
-# $env:APPDATA
-$roamData = "$HOME\AppData\Roaming"
 # $env:LOCALAPPDATA
 $localData = "$HOME\AppData\Local"
+# $env:APPDATA
+$roamData = "$HOME\AppData\Roaming"
+
+# $env:XDG_CONFIG_HOME="$env:LOCALAPPDATA"
+# $env:XDG_DATA_HOME="$env:APPDATA"
+# $env:XDG_CACHE_HOME="$env:TEMP"
 
 $scoop = $env:SCOOP
 # Note: $scoop is using backslash: C:\Users\younger\scoop
