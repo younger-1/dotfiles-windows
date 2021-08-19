@@ -74,16 +74,23 @@
     encoding = utf-8
     pruneDuringFetch = true
 
+[diff]
+    tool = nvimdiff2
+    guitool = vscode
+[difftool]
+    prompt = false
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+[difftool "nvimdiff2"]
+    cmd = nvim -d $LOCAL $REMOTE
+
 [merge]
     tool = vscode
     guitool = vscode
 [mergetool "vscode"]
     cmd = code --wait $MERGED
-[diff]
-    tool = vscode
-    guitool = vscode
-[difftool "vscode"]
-    cmd = code --wait --diff $LOCAL $REMOTE
+[mergetool "nvimdiff4"]
+    cmd = nvim -d $LOCAL $BASE $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
 
 [filter "lfs"]
     clean = git-lfs clean -- %f
@@ -102,3 +109,4 @@
 [http]
 	sslVerify = true
     postBuffer = 524288000
+

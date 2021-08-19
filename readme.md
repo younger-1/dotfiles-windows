@@ -37,8 +37,3 @@ dotfiles
 "AppData/Local/Microsoft/PowerToys/settings.json"
 ```
 
-# Github
-
-personal access token
-- Gitako:
-- Enhanced-github:
