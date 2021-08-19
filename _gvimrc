@@ -67,11 +67,11 @@ set guifont=等距更纱黑体_SC:h14
 set guiheadroom=0
 
 " [Gui Options]
-" set guioptions-=T " Removes GUI bars
+set guioptions-=T " Removes GUI bars
 " set guioptions-=l " Removes scrollbars
 " set guioptions-=r " Removes scrollbars
 " set guioptions-=b " Removes scrollbars
-" set guioptions-=e " Disables the GUI tab line in favor of the plain text version, 
+set guioptions-=e " Disables the GUI tab line in favor of the plain text version, 
 set guioptions+=c       " Console-like dialogs are used instead of graphical popup ones.
 
 
