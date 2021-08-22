@@ -105,6 +105,7 @@ Set-PSReadLineKeyHandler -Chord Ctrl+RightArrow -Function NextWord
 . $PSScriptRoot/completion-procs.ps1
 . $PSScriptRoot/completion-rg.ps1
 . $PSScriptRoot/completion-starship.ps1
+. $PSScriptRoot/completion-yq.ps1
 
 # https://www.tutorialspoint.com/explain-powershell-profile
 # . $HOME/Documents/PowerShell/my-alias.ps1

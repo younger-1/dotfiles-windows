@@ -5,7 +5,7 @@
     email = 45989017+younger-1@users.noreply.github.com
     signingkey = AB04775E81D89564
 [core]
-    editor = code --wait
+    editor = nvim
     # autocrlf = true
     autocrlf = input
     quotepath = false
@@ -107,6 +107,6 @@
 [protocol "http"]
     allow = always
 [http]
-	sslVerify = true
+    sslVerify = false
     postBuffer = 524288000
 
