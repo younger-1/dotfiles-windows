@@ -109,4 +109,10 @@
 [http]
     sslVerify = false
     postBuffer = 524288000
+    proxy = http://127.0.0.1:10809
 
+# [url "https://github.com.cnpmjs.org/"]  
+# [url "https://hub.fastgit.org/"]        
+#    insteadOf = https://github.com/
+# [url "https://github.com/"]
+# 	insteadOf = git@github.com:
