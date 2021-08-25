@@ -16,10 +16,6 @@
 # TODO
 # function or script for curl/wget/aria2 to use hub.fastgit.org
 
-# [proxy]
-$env:http_proxy="http://127.0.0.1:10809/"
-$env:https_proxy="http://127.0.0.1:10809/"
-
 # [Encoding]
 # Set encoding
 $OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding

@@ -184,3 +184,38 @@ function git {
         git.exe $args
     }
 }
+
+
+# [proxy]
+$HostIP = "127.0.0.1"
+$HttpPort = 10809
+$SocksPort = 10808
+
+function showproxy {
+    Write-Host ""
+    Write-Host "Show Proxy:"
+    Write-Host "http_proxy=$env:http_proxy"
+    Write-Host "https_proxy=$env:https_proxy"
+    Write-Host "ALL_proxy=$env:ALL_proxy"
+    Write-Host ""
+    echo "curl --connect-timeout 2 baidu.com"
+    curl --connect-timeout 2 baidu.com
+    Write-Host ""
+    echo "curl --connect-timeout 2 google.com"
+    curl --connect-timeout 2 google.com
+}
+
+function setproxy  {
+    $env:http_proxy="http://${HostIP}:$HttpPort"
+    $env:https_proxy="http://${HostIP}:$HttpPort"
+    $env:ALL_proxy="socks5://${HostIP}:$SocksPort"
+}
+
+function unsetproxy {
+    $env:http_proxy=""
+    $env:https_proxy=""
+    $env:ALL_proxy=""
+}
+
+setproxy
+
